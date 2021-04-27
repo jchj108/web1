@@ -1,0 +1,55 @@
+.container {
+	background : beige;
+	height : 100vh;
+	display: flex;
+	flex-direction: row; /* 중심축 설정 */
+	/* flex-direction의 기본값은 row, reverse를 하면 오른쪽으로 붙는다 */
+	flex-wrap: nowrap; /*기본값은 nowrap/*
+	/* flex-flow: coulumn nowrap; flex-flow는 wrap과 direction을 합한 것이다. */
+	/* justify-content: flex-start; */
+	/* coulumn reverse와 차이점은 아이템의 숫자가 유지되고 유지되지 않느냐 */
+	justify-content: space-between;
+	align-items: baseline;
+	align-content: center;
+}
+
+/* flex는 아이템 전체를 꾸며주는 속성과,
+   아이템 각각을 꾸며주는 속성이 있다 */
+
+.item {
+	width: 40px;
+	height: 40px;
+	border: 1px solid black;
+}
+.item1 {
+	background: #ef9a9a;
+	flex: 2 2 auto; /*grow, shrink, basis*/
+	align-self : center;
+}
+.item2 {
+	background : #f48fb1;
+}
+.item3 {
+	background : #ce93d8;
+}
+.item4 {
+	background : #b39ddb;
+}
+.item5 {
+	background : #90caf9;
+}
+.item6 {
+	background : #a5d6a7;
+}
+.item7 {
+	background : #e6ee9c
+}
+.item8 {
+	background : #fff59d;
+}
+.item9 {
+	background : #ffcc80;
+}
+.item10 {
+	background: #ffab91;
+}
